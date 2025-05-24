@@ -5,87 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thang Sian Khawm | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <img src="assets/profile.jpg" alt="Thang Sian Khawm" class="profile-pic" />
-      <h1>Thang Sian Khawm</h1>
-      <p>Master’s Student in ICT | IoT & Cloud Enthusiast | Network Engineer</p>
+  <header id="header">
+    <div class="navbar">
+      <div class="logo">Thang Sian Khawm</div>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <img src="assets/profile.jpg" alt="Profile Picture" class="hero-img" />
+      <h1>Hi, I'm <span class="highlight">Thang Sian Khawm</span></h1>
+      <h2><span id="typing"></span></h2>
+      <p>Master’s Student in ICT | Cloud & IoT Enthusiast | Network Engineer</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </div>
+  </section>
 
   <section id="about" class="container">
     <h2>About Me</h2>
     <p>
-      I'm currently pursuing a Master of Engineering in Information and Communication Technology (ICT) at the Asian Institute of Technology, Thailand. I hold a Bachelor's degree in Avionics Engineering from Myanmar Aerospace Engineering University.
-    </p>
-    <p>
-      My career spans multiple roles in the telecom and IT industries, including Field Service, Network Engineering, and Technical Support. I enjoy designing resilient networks, working with IoT, and developing AI-driven solutions.
+      I'm pursuing a Master of Engineering in Information and Communication Technology (ICT) at AIT, Thailand. With a background in Avionics Engineering and hands-on experience in networking, IoT, and cloud technologies, I bring a multi-disciplinary approach to solving real-world tech challenges.
     </p>
   </section>
 
   <section id="skills" class="container">
     <h2>Skills</h2>
-    <ul>
-      <li>IoT (Internet of Things)</li>
-      <li>Python Programming</li>
-      <li>Supervised Machine Learning</li>
-      <li>Amazon Web Services (AWS)</li>
-      <li>Network Infrastructure & Security</li>
-    </ul>
-  </section>
-
-  <section id="certifications" class="container">
-    <h2>Certifications</h2>
-    <ul>
-      <li>AWS Cloud Quest: Cloud Practitioner</li>
-      <li>Cisco Certified Network Associate (CCNA)</li>
-      <li>EnGenius Certified Network Professional (ECNP)</li>
-      <li>Google IT Support (Coursera)</li>
-      <li>Network Security and Database Vulnerabilities</li>
-    </ul>
-  </section>
-
-  <section id="experience" class="container">
-    <h2>Experience</h2>
-    <div class="job">
-      <h3>Network Engineer Intern – Yoma Strategic Holdings (2023)</h3>
-      <p><em>Configured Cisco devices, provided user support, and contributed to network design.</em></p>
-    </div>
-    <div class="job">
-      <h3>Microwave Engineer – Telecom International Myanmar (2019–2021)</h3>
-      <p><em>Optimized microwave networks, ensured uptime, and supported operations.</em></p>
-    </div>
-    <div class="job">
-      <h3>Service Dispatcher – Ericsson Myanmar (2018–2019)</h3>
-      <p><em>Coordinated field service operations and optimized resource allocation for SLA adherence.</em></p>
-    </div>
-    <div class="job">
-      <h3>Field Service Engineer – Ericsson Myanmar (2016–2018)</h3>
-      <p><em>Performed onsite equipment integration and maintenance with documentation and reporting.</em></p>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Programming</h3>
+        <ul>
+          <li>Python</li>
+          <li>Bash</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Cloud & DevOps</h3>
+        <ul>
+          <li>AWS</li>
+          <li>CI/CD</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Networking</h3>
+        <ul>
+          <li>Cisco Devices</li>
+          <li>Firewall Config</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Tools & Others</h3>
+        <ul>
+          <li>Wireshark</li>
+          <li>Linux</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <section id="projects" class="container">
     <h2>Projects</h2>
-    <ul>
-      <li><strong>Wi-Fi Anomaly Detection</strong> – Master’s thesis project using machine learning (KNN, RF) to identify abnormal traffic in smart cities.</li>
-      <li><strong>Carbon Emission Prediction</strong> – Built ML models analyzing the impact of renewable energy adoption in Thailand.</li>
+    <div class="project-card">
+      <h3>Wi-Fi Anomaly Detection</h3>
+      <p>Used ML techniques (KNN, RF) to detect abnormal traffic for smart city networks.</p>
+      <span class="tags">Python</span> <span class="tags">Machine Learning</span>
+    </div>
+    <div class="project-card">
+      <h3>Carbon Emission Prediction</h3>
+      <p>Predicted CO2 output using XGBoost and energy datasets for policy evaluation.</p>
+      <span class="tags">Python</span> <span class="tags">XGBoost</span>
+    </div>
+  </section>
+
+  <section id="experience" class="container">
+    <h2>Experience</h2>
+    <ul class="timeline">
+      <li>
+        <strong>Yoma Strategic Holdings</strong> - Network Engineer Intern (2023)
+        <p>Cisco config, network design, and user support.</p>
+      </li>
+      <li>
+        <strong>Telecom Int'l Myanmar</strong> - Microwave Engineer (2019–2021)
+        <p>Microwave optimization and network operations.</p>
+      </li>
+      <li>
+        <strong>Ericsson Myanmar</strong> - Field Service / Dispatcher (2016–2019)
+        <p>Service coordination, SLA compliance, and hardware maintenance.</p>
+      </li>
     </ul>
   </section>
 
   <section id="contact" class="container">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:thangsiankhawm@gmail.com">thangsiankhawm@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/thang-khawm-83b968157/" target="_blank" rel="noopener noreferrer">linkedin.com/in/thang-khawm-83b968157</a></p>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:thangsiankhawm@gmail.com">thangsiankhawm@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/thang-khawm-83b968157/" target="_blank">linkedin.com/in/thang-khawm</a></p>
     <p>GitHub: <a href="https://github.com/Thangoun/" target="_blank">github.com/Thangoun</a></p>
-    <p>Address: Km. 42 Paholyothin Highway, Klong Luang, Pathumthani 12120, Thailand</p>
-    <p>Nationality: Myanmar | Date of Birth: 5 September 1994</p>
+    <p>Location: Pathumthani, Thailand</p>
   </section>
 
   <footer>
     <p>&copy; 2025 Thang Sian Khawm. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://github.com/Thangoun" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/thang-khawm-83b968157/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
